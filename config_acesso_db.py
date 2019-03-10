@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 # tutorial de referência:
 # http: // www.postgresqltutorial.com/postgresql-python/connect/

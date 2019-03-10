@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """
     Script responsável por encapsular o acesso a base de dados
@@ -19,7 +18,7 @@ ARTIGOS_PUPULARES_QUERY = """
         articles a,
         log l
     where
-        a.slug = substring(l.path, 10) and
+        concat('/article/', a.slug) = l.path and
         l.status = '200 OK'
     group by
         a.title, l.path
@@ -39,7 +38,7 @@ AUTORES_POPULARES_QUERY = """
         log l
     where
         at.id = a.author and
-        a.slug = substring(l.path, 10) and
+        concat('/article/', a.slug) = l.path and
         l.status = '200 OK'
     group by
         at.name

@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """ Ferramenta de Análise de Logs
     Script principal que inicializa a ferramenta de analise de logs
     printando algumas informações no console.
 """
 
-import appdb 
+import appdb
 
 
 print("\n1. Quais são os três artigos mais populares de todos os tempos?")
