@@ -11,7 +11,7 @@ Este projeto é uma ferramenta de análise de logs para um site de notícias que
 - Docker
 - Docker Compose
 - Python 3.7.2
-- Pyscopg2
+- Psycopg2
 - PostgreSQL
 
 ## Executando a aplicação com Docker Compose
